@@ -1,0 +1,30 @@
+:root {
+  --background-header: #111111;
+  --header-text-color: #ffffff
+}
+
+body {
+  margin: 0;
+  font-family: Poppins,Roboto;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.flex {
+  display: flex;
+}

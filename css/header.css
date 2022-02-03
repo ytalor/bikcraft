@@ -1,0 +1,22 @@
+.header {
+  background: var(--background-header);
+  max-width: 100%;
+}
+.container {
+  justify-content: space-between;
+  align-items: center;
+}
+.header svg {
+  padding: 25px;
+}
+
+.header-list {
+  list-style: none;
+  gap: 20px;
+}
+
+.header-links {
+  color: var(--header-text-color);
+  font-size: 1.2rem;
+  padding: 10px;
+}
