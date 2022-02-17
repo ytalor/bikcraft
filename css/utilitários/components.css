@@ -1,0 +1,57 @@
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  color: var(--introducao-btn-color);
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  font: 600 1.125rem/1.35 'Poppins', sans-serif;
+  max-width: max-content;
+}
+
+
+.btn:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.btn.secundario {
+  background: var(--cor-10);
+  color: var(--cor-2);
+}
+
+.btn.secundario:hover {
+  background: var(--cor-9);
+}
+
+.tecnologia-modelo-link {
+  color: var(--cor-p1);
+  font: 500 1.5rem/1.5 'Poppins', sans-serif;
+  text-transform: uppercase;
+  border-bottom: 3px solid currentColor;
+}
+
+.tecnologia-modelo-link:hover {
+  color: var(--cor-0);
+}
+
+@media (max-width: 600px) {
+  .btn {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+}

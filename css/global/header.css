@@ -1,15 +1,14 @@
 .header {
-  background: var(--background-header);
+  background: var(--cor-12);
   max-width: 100%;
 }
-.container {
+.header-conteudo {
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
-  padding: 20px;
   flex-wrap: wrap;
   gap: 20px;
 }
+
 .header svg {
   padding: 25px;
 }
@@ -21,11 +20,10 @@
 }
 
 .header-menu a {
-  color: var(--header-text-color);
-  font-size: 1.2rem;
   display: inline-block;
   padding: 16px 0;
   position: relative;
+  color: inherit;
 }
 
 .header-menu a:after {
@@ -34,7 +32,7 @@
   height: 2px;
   width: 0;
   margin-top: 4px;
-  background-color: #ffffff;
+  background-color: var(--cor-0);
   transition: 0.3s;
   position: absolute;
 }
@@ -49,7 +47,7 @@
   }
 
   .header-menu a {
-    background: #111111;
+    background: var(--cor-11);
     padding: 12px 16px;
     gap: 20px;
   }
@@ -59,7 +57,7 @@
   }
 
   .header-menu a:hover {
-    background-color: #2e2e2e;
+    background-color: var(--cor-10);
   }
 }
 
