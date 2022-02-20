@@ -24,7 +24,6 @@
   max-width: max-content;
 }
 
-
 .btn:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
@@ -37,6 +36,24 @@
 .btn.secundario:hover {
   background: var(--cor-9);
 }
+.btn.seta {
+  display: flex;
+  align-items: center;
+}
+
+.btn.seta::after {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url(../../img/icones/seta.svg);
+}
+
+.btn.seta:hover::after {
+  transform: translateX(4px);
+  transition: 0.2s;
+}
 
 .tecnologia-modelo-link {
   color: var(--cor-p1);
@@ -47,6 +64,28 @@
 
 .tecnologia-modelo-link:hover {
   color: var(--cor-0);
+}
+
+/* titulos internos */
+.titulo-bg {
+  padding: 60px 0;
+  background-color: var(--cor-12);
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding: 40px 0;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
 }
 
 @media (max-width: 600px) {
