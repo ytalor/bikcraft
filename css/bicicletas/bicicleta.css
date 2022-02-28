@@ -1,0 +1,129 @@
+.bicicleta-bg {
+  background-color: var(--cor-11);
+}
+
+.bicicleta > span {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  /* padding: 10px 0; */
+  display: block;
+}
+
+.bicicleta h1 {
+  margin-bottom: 30px;
+}
+
+.bicicleta {
+  padding: 60px 0;
+}
+
+.bicicleta-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 40px;
+}
+
+.bicicletas-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bicicletas-imagens img {
+  flex: 1;
+  min-width: 200px;
+}
+
+.bicicletas-imagens img:first-child {
+  min-width: 100%;
+}
+
+.bicicleta-conteudo p {
+  margin-bottom: 32px;
+}
+
+.bicicleta-comprar {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 8px 12px;
+  align-items: center;
+  justify-items: start;
+  margin-bottom: 40px;
+}
+
+.bicicleta-comprar a {
+  grid-row: 1 / -1;
+}
+
+.bicicleta-comprar span {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 4px;
+  gap: 8px;
+}
+
+.bicicleta-info {
+  margin-bottom: 40px;
+}
+
+.bicicleta-info h2 {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.015rem;
+}
+
+.bicicleta-info ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+  gap: 32px;
+  background-color: var(--cor-12);
+  padding: 30px;
+}
+
+.bicicleta-info h3,
+.bicicleta-info p,
+.bicicleta-info img {
+  margin-bottom: 8px;
+}
+.bicicleta-info img {
+  max-width: 24px;
+}
+
+.bicicleta-ficha span {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.bicicleta-ficha ul {
+  background-color: var(--cor-12);
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.bicicleta-ficha li {
+  display: flex;
+  padding: 4px 0;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cor-11);
+}
+
+.bicicleta-ficha li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 800px) {
+  .bicicleta {
+    padding: 20px;
+  }
+
+  .bicicleta-main {
+    grid-template-columns: 1fr;
+    padding: 40px 0;
+  }
+
+  .bicicletas-imagens {
+    grid-row: 2;
+  }
+}
